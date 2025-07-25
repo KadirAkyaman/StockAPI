@@ -1,0 +1,15 @@
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.AssemblyInfo.cs
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.deps.json
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.dll
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.pdb
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Core.dll
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Core.pdb
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.A542804C.Up2Date
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.dll
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\refint\StockApp.Infrastructure.dll
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.pdb
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\ref\StockApp.Infrastructure.dll
