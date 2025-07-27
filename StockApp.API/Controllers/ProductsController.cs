@@ -28,7 +28,7 @@ namespace StockApp.API.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}", Name ="GetProductById")]
         public async Task<ActionResult<ProductDto>> GetProductByIdAsync(int id)
         {
             _logger.LogInformation("Executing GetProductByIdAsync for ID: {ProductId}", id);
@@ -57,7 +57,7 @@ namespace StockApp.API.Controllers
             }
 
             _logger.LogInformation("CreateProductAsync: Successfully created product with ID {ProductId}", createdProduct.Id);
-            return CreatedAtAction(nameof(GetProductByIdAsync), new { id = createdProduct.Id }, createdProduct);
+            return CreatedAtAction("GetProductById", new { id = createdProduct.Id }, createdProduct);
         }
 
         [HttpDelete("{id:int}")]

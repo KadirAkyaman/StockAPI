@@ -28,7 +28,7 @@ namespace StockApp.API.Controllers
             return Ok(allCategories);
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}", Name ="GetCategoryById")]
         public async Task<ActionResult<CategoryDto>> GetCategoryByIdAsync(int id)
         {
             _logger.LogInformation("Executing GetCategoryByIdAsync for ID: {CategoryId}", id);
@@ -56,7 +56,7 @@ namespace StockApp.API.Controllers
             }
 
             _logger.LogInformation("CreateCategoryAsync: Successfully created category with ID {CategoryId}", createdCategory.Id);
-            return CreatedAtAction(nameof(GetCategoryByIdAsync), new { id = createdCategory.Id }, createdCategory);
+             return CreatedAtAction("GetCategoryById", new { id = createdCategory.Id }, createdCategory);
         }
 
         [HttpPut("{id:int}")]
