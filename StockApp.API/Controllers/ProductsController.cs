@@ -101,12 +101,32 @@ namespace StockApp.API.Controllers
         [HttpGet("{id:int}/summary")]
         public async Task<ActionResult<ProductSummaryDto>> GetProductSummaryAsync(int id)
         {
+            _logger.LogInformation("Executing GetProductSummaryAsync for product ID: {ProductId}", id);
             var summary = await _productService.GetProductSummaryAsync(id);
 
             if (summary == null)
+            {
+                _logger.LogWarning("GetProductSummaryAsync: Summary could not be generated for product ID {ProductId} because the product was not found.", id);
                 return NotFound();
+            }
 
+            _logger.LogInformation("Successfully generated summary for product ID: {ProductId}", id);
             return Ok(summary);
+        }
+
+        [HttpPost("{id:int}/sell")]
+        public async Task<IActionResult> SellProductAsync(int id, [FromBody] SellProductDto sellProductDto)
+        {
+            _logger.LogInformation("Attempting to sell {Quantity} of product with ID: {ProductId}", sellProductDto.QuantityToSell, id);
+            var result = await _productService.SellProductAsync(id, sellProductDto);
+
+            if (!result)
+            {
+                _logger.LogWarning("Sell operation failed for product ID: {ProductId}. Product not found or insufficient stock.", id);
+                return BadRequest("Sell operation failed. The product may not exist or there is insufficient stock.");
+            }
+            _logger.LogInformation("Successfully sold {Quantity} of product with ID: {ProductId}", sellProductDto.QuantityToSell, id);
+            return NoContent();    
         }
     }
 }
