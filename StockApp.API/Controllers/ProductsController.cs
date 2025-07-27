@@ -97,5 +97,16 @@ namespace StockApp.API.Controllers
             var allProductsWithCategories = await _productService.GetAllProductsWithCategoryAsync();
             return Ok(allProductsWithCategories);
         }
+
+        [HttpGet("{id:int}/summary")]
+        public async Task<ActionResult<ProductSummaryDto>> GetProductSummaryAsync(int id)
+        {
+            var summary = await _productService.GetProductSummaryAsync(id);
+
+            if (summary == null)
+                return NotFound();
+
+            return Ok(summary);
+        }
     }
 }
