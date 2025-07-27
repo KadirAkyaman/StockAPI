@@ -28,7 +28,7 @@ namespace StockApp.API.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{id:int}", Name ="GetProductById")]
+        [HttpGet("{id:int}", Name = "GetProductById")]
         public async Task<ActionResult<ProductDto>> GetProductByIdAsync(int id)
         {
             _logger.LogInformation("Executing GetProductByIdAsync for ID: {ProductId}", id);
@@ -80,7 +80,7 @@ namespace StockApp.API.Controllers
         {
             _logger.LogInformation("Executing UpdateProductAsync for ID: {ProductId}", id);
             var result = await _productService.UpdateProductAsync(id, updateProductDto);
-            
+
             if (!result)
             {
                 _logger.LogWarning("UpdateProductAsync: Update failed for ID {ProductId}. Product may not exist.", id);
@@ -88,6 +88,14 @@ namespace StockApp.API.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpGet("with-category")]
+        public async Task<ActionResult<IEnumerable<ProductWithCategoryDto>>> GetAllWithCategoryAsync()
+        {
+            _logger.LogInformation("Executing GetAllWithCategoryAsync: Fetching products with their categories.");
+            var allProductsWithCategories = await _productService.GetAllProductsWithCategoryAsync();
+            return Ok(allProductsWithCategories);
         }
     }
 }
