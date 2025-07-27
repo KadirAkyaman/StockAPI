@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using StockApp.Core.Models;
 
-namespace StockApp.Core.Repositories
+namespace StockApp.Core.Interfaces
 {
     public interface IProductRepository
     {

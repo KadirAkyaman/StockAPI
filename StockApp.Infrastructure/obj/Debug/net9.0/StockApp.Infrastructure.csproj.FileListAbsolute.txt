@@ -3,6 +3,7 @@ C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockAp
 C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.AssemblyInfo.cs
 C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\obj\Debug\net9.0\StockApp.Infrastructure.sourcelink.json
 C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.deps.json
 C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.dll
 C:\Users\akyam\Desktop\StockApp\StockApp.Infrastructure\bin\Debug\net9.0\StockApp.Infrastructure.pdb

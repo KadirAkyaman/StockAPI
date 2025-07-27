@@ -1,3 +1,12 @@
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.csproj.AssemblyReference.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.AssemblyInfoInputs.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.AssemblyInfo.cs
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.csproj.CoreCompileInputs.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.sourcelink.json
 C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\appsettings.json
 C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\StockApp.API.staticwebassets.endpoints.json
@@ -20,14 +29,6 @@ C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\StockApp.Core.dll
 C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\StockApp.Infrastructure.dll
 C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\StockApp.Core.pdb
 C:\Users\akyam\Desktop\StockApp\StockApp.API\bin\Debug\net9.0\StockApp.Infrastructure.pdb
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.csproj.AssemblyReference.cache
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.AssemblyInfoInputs.cache
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.AssemblyInfo.cs
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.csproj.CoreCompileInputs.cache
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\StockApp.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\akyam\Desktop\StockApp\StockApp.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

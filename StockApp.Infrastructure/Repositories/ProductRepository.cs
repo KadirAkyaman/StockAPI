@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using Dapper;
 using Microsoft.Extensions.Options;
 using Npgsql;
+using StockApp.Core.Interfaces;
 using StockApp.Core.Models;
 using StockApp.Core.Options;
-using StockApp.Core.Repositories;
+
 
 namespace NewAPI.Repositories
 {
@@ -25,7 +26,6 @@ namespace NewAPI.Repositories
         {
             using var connection = CreateConnection();
 
-            // DÜZELTİLDİ: Kolon isimleri küçük harf ve tırnak içinde
             var sql = @"
             INSERT INTO public.""products"" (""name"", ""price"", ""stock"", ""categoryid"")
             VALUES (@Name, @Price, @Stock, @CategoryId)
@@ -37,8 +37,6 @@ namespace NewAPI.Repositories
         public async Task<bool> DeleteAsync(int id)
         {
             using var connection = CreateConnection();
-
-            // DÜZELTİLDİ: Kolon isimleri küçük harf ve tırnak içinde
             var sql = @"DELETE FROM public.""products"" WHERE ""id"" = @Id;";
 
             var affectedRows = await connection.ExecuteAsync(sql, new { Id = id });
@@ -48,14 +46,8 @@ namespace NewAPI.Repositories
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
             using var connection = CreateConnection();
-            // Dapper, C# property (Name) ile db kolonunu (name) eşleştirecektir.
-            // Bu yüzden SELECT * kullanmak genellikle sorun yaratmaz ama açık olmak daha iyidir.
             var sql = "SELECT * FROM public.\"products\"";
             return await connection.QueryAsync<Product>(sql);
-
-            // DAHA İYİ VE AÇIK YOL:
-            // var sql = @"SELECT ""id"" AS ""Id"", ""name"" AS ""Name"", ""price"" AS ""Price"", ""stock"" AS ""Stock"", ""categoryid"" AS ""CategoryId"" FROM public.""Products""";
-            // return await connection.QueryAsync<Product>(sql); 
         }
 
         public async Task<Product> GetByIdAsync(int id)
@@ -68,8 +60,6 @@ namespace NewAPI.Repositories
         public async Task<bool> UpdateAsync(Product product)
         {
             using var connection = CreateConnection();
-
-            // DÜZELTİLDİ: Kolon isimleri küçük harf ve tırnak içinde
             var sql = @"
                 UPDATE public.""products""
                 SET
